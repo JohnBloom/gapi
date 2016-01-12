@@ -14,6 +14,13 @@
         "regionBucket": "serverless.uswest2.gapi.run",
         "restApiId": "yzhtqdxn1b"
       }
+    ],
+    "prod": [
+      {
+        "region": "us-west-2",
+        "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-prod-r-IamRoleLambda-DYCNSH5YQ6L3",
+        "regionBucket": "serverless.uswest2.gapi.run"
+      }
     ]
   },
   "custom": {},

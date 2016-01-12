@@ -16,13 +16,15 @@
     "Stage": {
       "Type": "String",
       "AllowedValues": [
-        "development"
+        "development",
+        "prod"
       ]
     },
     "DataModelStage": {
       "Type": "String",
       "AllowedValues": [
-        "development"
+        "development",
+        "prod"
       ]
     },
     "NotificationEmail": {
