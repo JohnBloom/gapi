@@ -10,16 +10,17 @@
     "development": [
       {
         "region": "us-west-2",
-        "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-development-r-IamRoleLambda-LWN7GN95PVNJ",
+        "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-development-r-IamRoleLambda-VWO8XTSMBPPH",
         "regionBucket": "serverless.uswest2.gapi.run",
-        "restApiId": "yzhtqdxn1b"
+        "restApiId": "s0p4dxnh6h"
       }
     ],
     "prod": [
       {
         "region": "us-west-2",
         "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-prod-r-IamRoleLambda-DYCNSH5YQ6L3",
-        "regionBucket": "serverless.uswest2.gapi.run"
+        "regionBucket": "serverless.uswest2.gapi.run",
+        "restApiId": "s0p4dxnh6h"
       }
     ]
   },

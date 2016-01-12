@@ -11,8 +11,8 @@
       "eventSourceArn": "",
       "endpoints": [
         {
-          "path": "games/startheadsortails",
-          "method": "GET",
+          "path": "games/headsortails",
+          "method": "POST",
           "authorizationType": "none",
           "apiKeyRequired": false,
           "requestParameters": {},

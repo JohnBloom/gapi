@@ -3,7 +3,7 @@ var game = require("./game");
 module.exports.start = function(pass, fail) {
     game.startGame(function(currentGame){
 	currentGame.message = "Pick heads or tails";
-	pass(game);
+	pass(currentGame);
     }, fail);
 }
 

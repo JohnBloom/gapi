@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "profile": "aws-0",
   "location": "https://github.com/...",
-  "author": "",
+  "author": "John Bloom",
   "description": "",
   "custom": {},
   "cloudFormation": {

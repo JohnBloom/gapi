@@ -2,8 +2,11 @@ var Chance = require("chance");
 var chance = new Chance();
 var AWS = require("aws-sdk");
 
-var credentials = new AWS.SharedIniFileCredentials({profile: 'personal'});
-AWS.config.credentials = credentials;
+if(process.env.SERVERLESS_STAGE == "local"){
+    var credentials = new AWS.SharedIniFileCredentials({profile: 'personal'});
+    AWS.config.credentials = credentials;
+}
+
 
 var docClient = new AWS.DynamoDB.DocumentClient({region: 'us-west-2'});
 
@@ -13,10 +16,10 @@ module.exports.startGame = function(pass, fail){
     item.status = "started";
     
     var params = {
-	TableName:"gapi-dev",
+	TableName:process.env.databaseName,
 	Item: item
     };
-    
+
     docClient.put(params, function(err, data) {
 	if (err) {
 	    console.log(err.message);
@@ -29,7 +32,7 @@ module.exports.startGame = function(pass, fail){
 
 module.exports.endGame = function(gameId, result, pass, fail) {
     var params = {
-	TableName:"gapi-dev",
+	TableName:process.env.databaseName,
 	Key:{
 	    "gameId": gameId
 	},
