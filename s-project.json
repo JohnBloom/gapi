@@ -1,17 +1,18 @@
 {
   "name": "gapi",
   "version": "0.0.1",
-  "profile": "serverless-0",
+  "profile": "personal",
   "location": "https://github.com/...",
-  "author": "",
-  "description": "",
+  "author": "John Bloom",
+  "description": "A generic game api",
   "domain": "gapi.run",
   "stages": {
     "development": [
       {
         "region": "us-west-2",
-        "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-development-r-IamRoleLambda-VWO8XTSMBPPH",
-        "regionBucket": "serverless.uswest2.gapi.run"
+        "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-development-r-IamRoleLambda-LWN7GN95PVNJ",
+        "regionBucket": "serverless.uswest2.gapi.run",
+        "restApiId": "yzhtqdxn1b"
       }
     ]
   },
