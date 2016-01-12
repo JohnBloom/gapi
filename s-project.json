@@ -1,0 +1,20 @@
+{
+  "name": "gapi",
+  "version": "0.0.1",
+  "profile": "serverless-0",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "",
+  "domain": "gapi.run",
+  "stages": {
+    "development": [
+      {
+        "region": "us-west-2",
+        "iamRoleArnLambda": "arn:aws:iam::758808922724:role/gapi-development-r-IamRoleLambda-VWO8XTSMBPPH",
+        "regionBucket": "serverless.uswest2.gapi.run"
+      }
+    ]
+  },
+  "custom": {},
+  "plugins": []
+}
